@@ -5,14 +5,14 @@
  * This program does basic math
 */
 
-//clear
+//clear + pause
 basic.clearScreen()
 basic.pause(1000)
 
 //statement 
 basic.showString('A rectangle has dimensions 5 cm & 3 cm.')
 
-//clear
+//clear + pause
 basic.clearScreen()
 basic.pause(1000)
 
@@ -20,7 +20,7 @@ basic.pause(1000)
 basic.showString('The perimeter would be:' + (2 * (5 + 3)).toString() + 'cm')
 basic.showIcon(IconNames.Happy)
 
-//clear
+//clear + pause
 basic.clearScreen()
 basic.pause(1000)
 
@@ -28,6 +28,6 @@ basic.pause(1000)
 basic.showString('The area would be:' + (5 * 3).toString() + 'cm^2')
 basic.showIcon(IconNames.Happy)
 
-//clear
+//clear + pause
 basic.clearScreen()
 basic.pause(1000)
