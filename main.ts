@@ -17,7 +17,7 @@ basic.clearScreen()
 basic.pause(1000)
 
 //multiply
-basic.showString('The perimeter would be:' + (5 * 3).toString() + 'cm^2')
+basic.showString('The perimeter would be:' + (2 * (5 + 3)).toString() + 'cm')
 basic.showIcon(IconNames.Happy)
 basic.pause(100)
 basic.clearScreen()
@@ -27,7 +27,7 @@ basic.clearScreen()
 basic.pause(1000)
 
 //multiply
-basic.showString('The area would be:' + (2 * (5 + 3)).toString())
+basic.showString('The area would be:' + (5 * 3).toString() + 'cm^2')
 basic.showIcon(IconNames.Happy)
 basic.pause(100)
 basic.clearScreen()
