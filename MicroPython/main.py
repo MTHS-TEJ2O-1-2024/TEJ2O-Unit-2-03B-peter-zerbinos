@@ -4,32 +4,35 @@ Copyright (c) 2020 MTHS All rights reserved
 Created by: Peter Zerbinos
 Created on: Sep 2024
 This program does basic math
-
 """
 
-# clear + pause
-basic.clear_screen()
-basic.pause(1000)
-
-# statement 
-basic.show_string('A rectangle has dimensions 5 cm & 3 cm.')
+from microbit import display, sleep, Image
 
 # clear + pause
-basic.clear_screen()
-basic.pause(1000)
+display.clear()
+sleep(1000)
 
-# multiply + smiley
-basic.show_string('The perimeter would be:' + str((2 * (5 + 3))) + 'cm')
-basic.show_icon(IconNames.HAPPY)
-
-# clear + pause
-basic.clear_screen()
-basic.pause(1000)
-
-# multiply + smiley
-basic.show_string('The area would be:' + str((5 * 3)) + 'cm^2')
-basic.show_icon(IconNames.HAPPY)
+# statement
+display.scroll("A rectangle has dimensions 5 cm & 3 cm.")
 
 # clear + pause
-basic.clear_screen()
-basic.pause(1000)
+display.clear()
+sleep(1000)
+
+# calculate perimeter + smiley
+perimeter = 2 * (5 + 3)
+display.scroll("The perimeter would be: {} cm".format(perimeter))
+display.show(Image.HAPPY)
+
+# clear + pause
+display.clear()
+sleep(1000)
+
+# calculate area + smiley
+area = 5 * 3
+display.scroll("The area would be: {} cm^2".format(area))
+display.show(Image.HAPPY)
+
+# clear + pause
+display.clear()
+sleep(1000)
